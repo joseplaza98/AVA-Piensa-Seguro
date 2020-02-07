@@ -1,0 +1,93 @@
+<!--
+  Generated template for the Tema4_3bPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="primaryColor">
+    <ion-title>tema4-3b</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="fondo">
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <img src="../../../assets/imgs/logo.png" />
+          <ion-card-content>
+            <ion-card-title class="card-title">Tipos de XSS</ion-card-title>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col>
+        <ion-slides pager>
+
+          <ion-slide style="background-color: #c3fdff">
+            <ion-card>
+              <img src="../../../../../../assets/icon/Iconos/alerta.png" />
+              <ion-card-content>
+                <ion-card-title class="card-title">XSS</ion-card-title>
+                <ion-card-content>Cross-site scripting es un tipo de vulnerabilidad informática o agujero de seguridad
+                  típico de las aplicaciones Web, que puede permitir a una tercera persona inyectar en páginas web
+                  visitadas por el usuario código JavaScript o en otro lenguaje similar, se puede evitar usando medidas
+                  como CSP Política del mismo origen.</ion-card-content>
+              </ion-card-content>
+            </ion-card>
+            <br />
+          </ion-slide>
+
+          <ion-slide style="background-color: #c3fdff">
+            <ion-card>
+              <img src="../../../../../../assets/icon/Iconos/tarjeta.png" />
+              <ion-card-content>
+                <ion-card-title class="card-title">XSS-Directa</ion-card-title>
+                <ion-card-content class="card-subtitle">Algunos usan esta vulnerabilidad para hacer un desface usando
+                  una
+                  etiqueta "div>" que
+                  cubra toda la web o con un script que la redirecciones a un sitio web clonado.></ion-card-content>
+              </ion-card-content>
+              <div class="v-container">
+                <div class="v-container iframe">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/rtFH188ZJX8" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+            </ion-card>
+            <br />
+          </ion-slide>
+
+          <ion-slide style="background-color: #c3fdff">
+            <ion-card>
+              <img src="../../../../../../assets/icon/Iconos/navegacion.png" />
+              <ion-card-content>
+                <ion-card-title class="card-title">XSS-Indirecta</ion-card-title>
+                <ion-card-content class="card-subtitle">Es muy común encontrarlo en motores de búsqueda, en él se
+                  inyecta
+                  a través de
+                  formularios, url, cookies programadas en flash o incluso en videos los el XSS necesario para realizar
+                  el
+                  ataque.</ion-card-content>
+              </ion-card-content>
+              <div class="v-container">
+                <div class="v-container iframe">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/inCS6PQYu34" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+            </ion-card>
+            <br />
+          </ion-slide>
+
+        </ion-slides>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <a> https://es.wikipedia.org/wiki/Cross-site_scripting </a>
+</ion-content>

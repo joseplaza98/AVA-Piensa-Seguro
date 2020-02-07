@@ -1,0 +1,19 @@
+page-cap1-1f {
+
+            /** Actividad*/
+            .a-container {
+                position: relative;
+                padding-bottom: 200%; /* proporción 16:9 */
+                padding-top:0;
+                height: 0;
+            }
+            
+            .a-container iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            
+}

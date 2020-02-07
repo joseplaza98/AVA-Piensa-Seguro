@@ -1,0 +1,144 @@
+<!--
+  Generated template for the Tema4_1Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="primaryColor">
+    <ion-title>tema4-1</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding #pageTo class="fondo">
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-slides pager>
+
+          <ion-slide style="background-color: #c3fdff">
+            <ion-card>
+              <img src="../../../../../assets/imgs/riesgo.png" />
+              <ion-card-content>
+                <ion-card-title class="card-title">Amenaza, riesgo y vulnerabilidad</ion-card-title>
+              </ion-card-content>
+            </ion-card>
+            <br />
+          </ion-slide>
+
+          <ion-slide style="background-color: #C2FDFF">
+            <ion-card>
+              <img src="../../../../../assets/icon/Iconos/huella.png" />
+              <ion-card-content>
+                <ion-card-title class="card-title">Amenaza</ion-card-title>
+                <ion-card-content class="card-subtitle">Las amenazas pueden proceder de ataques (fraude, robo, virus),
+                  sucesos físicos (incendios, inundaciones) o negligencia y decisiones institucionales (mal manejo de
+                  contraseñas, no usar cifrado). Desde el punto de vista de una organización pueden ser tanto internas
+                  como externas.</ion-card-content>
+              </ion-card-content>
+            </ion-card>
+            <br />
+          </ion-slide>
+
+          <ion-slide style="background-color: #c3fdff">
+            <ion-card>
+              <img src="../../../../../assets/icon/Iconos/rebota.png" />
+              <ion-card-content>
+                <ion-card-title class="card-title">Riesgo</ion-card-title>
+                <ion-card-content class="card-subtitle">El riesgo se mide asumiendo una determinada vulnerabilidad
+                  frente
+                  a cada tipo de peligro. Si bien no siempre se hace, debe distinguirse adecuadamente entre peligrosidad
+                  y, vulnerable y riesgo.</ion-card-content>
+              </ion-card-content>
+            </ion-card>
+            <br />
+          </ion-slide>
+
+          <ion-slide style="background-color: #C2FDFF">
+            <ion-card>
+              <img src="../../../../../assets/icon/Iconos/analisis.png" />
+              <ion-card-content>
+                <ion-card-title class="card-title">Vulnerabilidad</ion-card-title>
+                <ion-card-content class="card-subtitle">Una vulnerabilidad (en términos de informática) es una debilidad
+                  o
+                  fallo en un sistema de información que pone en riesgo la seguridad de la información pudiendo permitir
+                  que un atacante pueda comprometer la integridad, disponibilidad o confidencialidad de la misma.
+                </ion-card-content>
+                <div class="button-content">
+                  <button ion-button outline round (click)="scrollToDown()">Siguiente</button>
+                </div>
+              </ion-card-content>
+            </ion-card>
+            <br />
+          </ion-slide>
+
+        </ion-slides>
+      </ion-col>
+
+      <ion-col>
+        <ion-slides pager>
+
+          <ion-slide style="background-color: #c3fdff">
+            <ion-card>
+              <img src="../../../../../assets/icon/Iconos/interrupcion.png" />
+              <ion-card-content>
+                <ion-card-title class="card-title">Tipos de vulnerabilidades</ion-card-title>
+              </ion-card-content>
+            </ion-card>
+            <br />
+          </ion-slide>
+
+          <ion-slide style="background-color: #C2FDFF">
+            <ion-card>
+              <img src="../../../../../assets/icon/Iconos/hacker.png" />
+              <ion-card-content>
+                <ion-card-title class="card-title">De acceso</ion-card-title>
+                <ion-card-content class="card-subtitle">Son todas aquellas vulnerabilidades que son comprometidas al no
+                  tener control sobre los usuarios que pueden acceder a determinada información confidenical de la
+                  empresa
+                  u organización.</ion-card-content>
+                <div class="button-content">
+                  <button ion-button outline round (click)="aTema4_1a()">Ver</button>
+                </div>
+              </ion-card-content>
+            </ion-card>
+            <br />
+          </ion-slide>
+
+          <ion-slide style="background-color: #c3fdff">
+            <ion-card>
+              <img src="../../../../../assets/icon/Iconos/contraseña.png" />
+              <ion-card-content>
+                <ion-card-title class="card-title">De validación</ion-card-title>
+                <ion-card-content class="card-subtitle">Son aquellas vulnerabilidades donde se presenta principalmente
+                  la
+                  suplantación de identidad para acceder a los archivos confidenciales de una empresa o organización.
+                </ion-card-content>
+                <div class="button-content">
+                  <button ion-button outline round (click)="aTema4_2a()">Ver</button>
+                </div>
+              </ion-card-content>
+            </ion-card>
+            <br />
+          </ion-slide>
+
+        </ion-slides>
+      </ion-col>
+      <ion-col>
+          <ion-card>
+            <img src="../../../../../assets/icon/Iconos/carpeta.png" />
+            <ion-card-content>
+              <ion-card-title class="card-title">Evaluación</ion-card-title>
+              <div class="button-content">
+                <button ion-button outline round (click)="aEval1_cap4()">Realizar</button>
+              </div>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <a> https://www.incibe.es/protege-tu-empresa/blog/amenaza-vs-vulnerabilidad-sabes-se-diferencian </a>
+  <a> https://es.wikipedia.org/wiki/Riesgo </a>
+</ion-content>
