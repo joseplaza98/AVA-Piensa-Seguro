@@ -8,6 +8,7 @@ import { T5Su1Un6Page } from '../Sub Unidad 1/t5-su1-un6/t5-su1-un6';
 import { T6Su1Un6Page } from '../Sub Unidad 1/t6-su1-un6/t6-su1-un6';
 import { T7Su1Un6Page } from '../Sub Unidad 1/t7-su1-un6/t7-su1-un6';
 import { T8Su1Un6Page } from '../Sub Unidad 1/t8-su1-un6/t8-su1-un6';
+import { IntU7Page } from '../../Unidad 7/int-u7/int-u7';
 
 /**
  * Generated class for the SelecSuU6Page page.
@@ -62,4 +63,9 @@ this.navCtrl.push(T1Su1Un6Page);
   t8_su1_u6(){
     this.navCtrl.push(T8Su1Un6Page);
   }
+
+  aintU7(){
+    this.navCtrl.setRoot(IntU7Page)
+  }
+
 }

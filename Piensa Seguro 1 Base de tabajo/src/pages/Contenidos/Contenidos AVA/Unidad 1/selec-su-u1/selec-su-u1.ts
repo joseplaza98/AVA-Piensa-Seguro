@@ -4,6 +4,7 @@ import { T1Su1U1Page } from '../Sub Unidad 1/t1-su1-u1/t1-su1-u1';
 import { T2Su1U1Page } from '../Sub Unidad 1/t2-su1-u1/t2-su1-u1';
 import { T1Su2U1Page } from '../Sub Unidad 2/t1-su2-u1/t1-su2-u1';
 import { T2Su2U1Page } from '../Sub Unidad 2/t2-su2-u1/t2-su2-u1';
+import { IntU2Page } from '../../Unidad 2/int-u2/int-u2';
 
 /**
  * Generated class for the SelecSuU1Page page.
@@ -47,5 +48,8 @@ export class SelecSuU1Page {
     this.navCtrl.push(T2Su2U1Page);
   }
 
+  aintU2(){
+    this.navCtrl.setRoot(IntU2Page)
+  }
 
 }

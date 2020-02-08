@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { PaginaInicioPage } from '../pagina-inicio/pagina-inicio';
 import { IntU1Page } from '../Contenidos/Contenidos AVA/Unidad 1/int-u1/int-u1';
 import { IntU2Page } from '../Contenidos/Contenidos AVA/Unidad 2/int-u2/int-u2';
 import { IntU3Page } from '../Contenidos/Contenidos AVA/Unidad 3/int-u3/int-u3';
@@ -17,10 +16,6 @@ export class HomePage {
 
   constructor(public navCtrl: NavController) {
 
-  }
-
-  CloseSession() {
-    this.navCtrl.setRoot(PaginaInicioPage);
   }
 
   aInt_U1() {

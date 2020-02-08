@@ -11,7 +11,6 @@ import { AyudasPage } from '../pages/Contenidos/ayudas/ayudas';
 import { AcercaDePage } from '../pages/Contenidos/acerca-de/acerca-de';
 
 import { PaginaInicioPage } from '../pages/pagina-inicio/pagina-inicio';
-import { SeleccionCapituloPage } from '../pages/Contenidos/Capitulos/Selecciones/seleccion-capitulo/seleccion-capitulo';
 import { InsigniasPage } from '../pages/Logros/insignias/insignias';
 
 @Component({
@@ -33,14 +32,15 @@ export class MyApp {
       { title: 'Inicio', component: HomePage, icon: 'md-home' },
       /** 
       { title: 'List', component: ListPage, icon: 'md-home' },
-      */
       { title: 'Temas', component: SeleccionCapituloPage, icon: 'md-bookmarks' },
+           */
       { title: 'Actividades', component: ActividadesPage, icon: 'md-play' },
       { title: 'Foro', component: ForoPage, icon: 'md-chatbubbles' },
       { title: 'Estadísticas', component: EstadisticasPage, icon: 'md-stats' },
       { title: 'Logros', component: InsigniasPage, icon: 'md-ribbon' },
       { title: 'Ayudas', component: AyudasPage, icon: 'md-help-circle' },
       { title: 'Acerca de', component: AcercaDePage, icon: 'md-more'},
+      { title: 'Cerrar sesión', component: PaginaInicioPage, icon: 'md-log-out'},
     ];
 
   }
@@ -59,4 +59,5 @@ export class MyApp {
     // we wouldn't want the back button to show in this scenario
     this.nav.setRoot(page.component);
   }
+
 }

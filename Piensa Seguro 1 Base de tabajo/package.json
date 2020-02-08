@@ -24,6 +24,7 @@
     "@ionic-native/splash-screen": "~4.20.0",
     "@ionic-native/status-bar": "~4.20.0",
     "@ionic/storage": "2.2.0",
+    "api-ai-javascript": "^2.0.0-beta.21",
     "cordova-android": "^8.0.0",
     "cordova-plugin-video-player": "git+https://github.com/moust/cordova-plugin-videoplayer.git",
     "ionic-angular": "3.9.5",

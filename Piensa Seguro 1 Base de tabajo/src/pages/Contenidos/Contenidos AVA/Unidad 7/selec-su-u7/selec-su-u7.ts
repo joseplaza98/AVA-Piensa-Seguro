@@ -3,6 +3,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { T1Su1Un7Page } from '../Sub Unidad 1/t1-su1-un7/t1-su1-un7';
 import { T1Su2Un7Page } from '../Sub Unidad 2/t1-su2-un7/t1-su2-un7';
 import { T2Su2U7Page } from '../Sub Unidad 2/t2-su2-u7/t2-su2-u7';
+import { InsigniasPage } from '../../../../Logros/insignias/insignias';
 
 /**
  * Generated class for the SelecSuU7Page page.
@@ -39,4 +40,7 @@ export class SelecSuU7Page {
     this.navCtrl.push(T2Su2U7Page);
   }
 
+  aInsignias(){
+    this.navCtrl.setRoot(InsigniasPage)
+  }
 }

@@ -5,12 +5,15 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="nvColor">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-title>selec-SU-U1</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding class="fn">
 
   <ion-grid>
     <ion-row>
@@ -27,7 +30,7 @@
                 <ion-thumbnail item-start>
                   <img src="../../../../../assets/icon/Iconos/camara2.png">
                 </ion-thumbnail>
-                <button ion-button clear item-end icon-end (click)="t1_su1_u1()">
+                <button ion-button round clear item-end icon-end (click)="t1_su1_u1()">
                   Reproducir
                   <ion-icon name="play"></ion-icon>
                 </button>
@@ -37,9 +40,9 @@
                 <ion-thumbnail item-start>
                   <img src="../../../../../assets/icon/Iconos/alerta.png">
                 </ion-thumbnail>
-                <button ion-button clear item-end icon-end (click)="t2_su1_u1()">
-                  Reproducir
-                  <ion-icon name="play"></ion-icon>
+                <button ion-button round clear item-end icon-end (click)="t2_su1_u1()">
+                  Infografía
+                  <ion-icon name="md-bookmarks"></ion-icon>
                 </button>
               </ion-item>
             </ion-list>
@@ -55,7 +58,7 @@
                 <ion-thumbnail item-start>
                   <img src="../../../../../assets/icon/Iconos/camara2.png">
                 </ion-thumbnail>
-                <button ion-button clear item-end icon-end (click)="t1_su2_u1()">
+                <button ion-button round clear item-end icon-end (click)="t1_su2_u1()">
                   Reproducir
                   <ion-icon name="play"></ion-icon>
                 </button>
@@ -65,9 +68,19 @@
                 <ion-thumbnail item-start>
                   <img src="../../../../../assets/icon/Iconos/alerta.png">
                 </ion-thumbnail>
-                <button ion-button clear item-end icon-end (click)="t2_su2_u1()">
-                  Reproducir
-                  <ion-icon name="play"></ion-icon>
+                <button ion-button round clear item-end icon-end (click)="t2_su2_u1()">
+                  Infografía
+                  <ion-icon name="md-bookmarks"></ion-icon>
+                </button>
+              </ion-item>
+
+              <ion-item>
+                <ion-thumbnail item-start>
+                  <img src="../../../../../assets/icon/Iconos/llaveMano.png">
+                </ion-thumbnail>
+                <button ion-button round clear item-end icon-end (click)="aintU2()">
+                  Unidad 2
+                  <ion-icon name="md-fastforward"></ion-icon>
                 </button>
               </ion-item>
             </ion-list>
