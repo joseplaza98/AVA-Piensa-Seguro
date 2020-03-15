@@ -19,17 +19,17 @@
   
       <div *ngFor="let message of messageHistory"> <!--Se recorren los mensajes-->
   
-        <ion-item class="messageBot" *ngIf="!message.fromUser"> <!-- Si el mensaje es del usuario -->
+        <ion-item class="messageBot" *ngIf="!message.fromUser" text-wrap> <!-- Si el mensaje es del usuario -->
           <ion-avatar item-start>
-            <img src="https://api.adorable.io/avatars/285/nico.png">
+            <img src="../../../assets//imgs/iconoLogo.png">
           </ion-avatar>
           <h3>{{message.text}}</h3><!--Texto del mensaje-->
         </ion-item>
   
-        <ion-item class="messageUser" *ngIf="message.fromUser"><!--Si el mensaje es del agente-->
+        <ion-item class="messageUser" *ngIf="message.fromUser" text-wrap><!--Si el mensaje es del agente-->
           <h3 text-right>{{message.text}}</h3><!--Texto del mensaje-->
           <ion-avatar item-end>
-            <img src="https://api.adorable.io/avatars/285/carlos.png">
+            <img src="../../../assets/icon/Iconos/usuario2.png">
           </ion-avatar>
         </ion-item>
   
@@ -65,3 +65,8 @@
     </ion-grid>
   
   </ion-footer>
+
+  <!--
+    https://api.adorable.io/avatars/285/nico.png
+  https://api.adorable.io/avatars/285/carlos.png
+  -->

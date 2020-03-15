@@ -16,8 +16,9 @@ import { RegistrarPage } from '../pages/Sesión/registrar/registrar';
 
 /**Contenidos */
 import { TemasPage } from '../pages/Contenidos/temas/temas';
-import { ActividadesPage } from '../pages/Contenidos/actividades/actividades';
+
 import { ForoPage } from '../pages/Contenidos/foro/foro';
+import { PlanCapacitiacionPage } from '../pages/plan-capacitiacion/plan-capacitiacion';
 import { EstadisticasPage } from '../pages/Contenidos/estadisticas/estadisticas';
 import { InsigniasPage } from '../pages/Logros/insignias/insignias';
 import { AyudasPage } from '../pages/Contenidos/ayudas/ayudas';
@@ -31,7 +32,6 @@ import { LogrosU4Page } from '../pages/Logros/logros-u4/logros-u4';
 import { LogrosU5Page } from '../pages/Logros/logros-u5/logros-u5';
 import { LogrosU6Page } from '../pages/Logros/logros-u6/logros-u6';
 import { LogrosU7Page } from '../pages/Logros/logros-u7/logros-u7';
-
 
 /**Unidad 1 */
 
@@ -190,7 +190,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
     /**Contenidos */
     TemasPage,
-    ActividadesPage,
+    PlanCapacitiacionPage,
     ForoPage,
     EstadisticasPage,
     InsigniasPage,
@@ -361,7 +361,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
     /**Contenidos */
     TemasPage,
-    ActividadesPage,
+    PlanCapacitiacionPage,
     ForoPage,
     EstadisticasPage,
     InsigniasPage,

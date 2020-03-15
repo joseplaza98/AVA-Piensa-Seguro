@@ -20,7 +20,7 @@ export class ForoPage {
   @ViewChild(Content) content: Content;
 
   client;
-  accessToken = 'ff633c85e0154e08beb53af7eaf19893'; //esta es la llave que nos otroga DialogFlow
+  accessToken = 'f08187fa8e1147d88e53cf691feb9964'; //esta es la llave que nos otroga DialogFlow
 
   user_textToSend: string; //contiene lo qu el usuario escriba
   messageHistory: any[] = []; //aqui se almacenan los objetos con los mensajes que se pintan en pantalla

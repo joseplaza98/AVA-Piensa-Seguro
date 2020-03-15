@@ -4,7 +4,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import { ActividadesPage } from '../pages/Contenidos/actividades/actividades';
 import { ForoPage } from '../pages/Contenidos/foro/foro';
 import { EstadisticasPage } from '../pages/Contenidos/estadisticas/estadisticas';
 import { AyudasPage } from '../pages/Contenidos/ayudas/ayudas';
@@ -12,6 +11,7 @@ import { AcercaDePage } from '../pages/Contenidos/acerca-de/acerca-de';
 
 import { PaginaInicioPage } from '../pages/pagina-inicio/pagina-inicio';
 import { InsigniasPage } from '../pages/Logros/insignias/insignias';
+import { PlanCapacitiacionPage } from '../pages/plan-capacitiacion/plan-capacitiacion';
 
 @Component({
   templateUrl: 'app.html'
@@ -29,18 +29,14 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Inicio', component: HomePage, icon: 'md-home' },
-      /** 
-      { title: 'List', component: ListPage, icon: 'md-home' },
-      { title: 'Temas', component: SeleccionCapituloPage, icon: 'md-bookmarks' },
-           */
-      { title: 'Actividades', component: ActividadesPage, icon: 'md-play' },
-      { title: 'Foro', component: ForoPage, icon: 'md-chatbubbles' },
-      { title: 'Estadísticas', component: EstadisticasPage, icon: 'md-stats' },
-      { title: 'Logros', component: InsigniasPage, icon: 'md-ribbon' },
-      { title: 'Ayudas', component: AyudasPage, icon: 'md-help-circle' },
-      { title: 'Acerca de', component: AcercaDePage, icon: 'md-more'},
-      { title: 'Cerrar sesión', component: PaginaInicioPage, icon: 'md-log-out'},
+      { title: 'Inicio', component: HomePage, icon: 'ios-home-outline' },
+      { title: 'Plan de capacitación', component: PlanCapacitiacionPage, icon: 'ios-list-box-outline' },
+      { title: 'Consultar a Infinity', component: ForoPage, icon: 'ios-chatbubbles-outline' },
+      { title: 'Estadísticas', component: EstadisticasPage, icon: 'ios-stats-outline' },
+      { title: 'Logros', component: InsigniasPage, icon: 'ios-ribbon-outline' },
+      { title: 'Ayudas', component: AyudasPage, icon: 'ios-help-circle-outline' },
+      { title: 'Acerca de', component: AcercaDePage, icon: 'ios-more-outline'},
+      { title: 'Cerrar sesión', component: PaginaInicioPage, icon: 'ios-log-out-outline'},
     ];
 
   }
