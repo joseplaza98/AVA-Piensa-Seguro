@@ -8,15 +8,12 @@ import { MyApp } from './app.component';
 import { PaginaInicioPage } from '../pages/pagina-inicio/pagina-inicio';
 
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 
 /**Sesion de usuario*/
 import { LoginPage } from '../pages/Sesión/login/login';
 import { RegistrarPage } from '../pages/Sesión/registrar/registrar';
 
 /**Contenidos */
-import { TemasPage } from '../pages/Contenidos/temas/temas';
-
 import { ForoPage } from '../pages/Contenidos/foro/foro';
 import { PlanCapacitiacionPage } from '../pages/plan-capacitiacion/plan-capacitiacion';
 import { EstadisticasPage } from '../pages/Contenidos/estadisticas/estadisticas';
@@ -154,23 +151,6 @@ import { T1Su1Un7Page } from '../pages/Contenidos/Contenidos AVA/Unidad 7/Sub Un
 import { T1Su2Un7Page } from '../pages/Contenidos/Contenidos AVA/Unidad 7/Sub Unidad 2/t1-su2-un7/t1-su2-un7';
 import { T2Su2U7Page } from '../pages/Contenidos/Contenidos AVA/Unidad 7/Sub Unidad 2/t2-su2-u7/t2-su2-u7';
 
-/**Actividades y evaluaciones */
-
-/**Evaluaciones */
-import { Eva1Cap1Page } from '../pages/Contenidos/Actividades de retroalimentacion/Evaluaciones/eva1-cap1/eva1-cap1';
-import { Eva1Cap2Page } from '../pages/Contenidos/Actividades de retroalimentacion/Evaluaciones/eva1-cap2/eva1-cap2';
-import { Eva1Cap3Page } from '../pages/Contenidos/Actividades de retroalimentacion/Evaluaciones/eva1-cap3/eva1-cap3';
-import { Eva1Cap4Page } from '../pages/Contenidos/Actividades de retroalimentacion/Evaluaciones/eva1-cap4/eva1-cap4';
-
-/**Actividad y comandos Tema 3-2 */
-/**Nmap */
-import { ComandosNmapPage } from '../pages/Contenidos/Capitulos/Capitulo 3/Talleres Capitulo 3/Nmap/comandos-nmap/comandos-nmap';
-import { PracticaNmapPage } from '../pages/Contenidos/Capitulos/Capitulo 3/Talleres Capitulo 3/Nmap/practica-nmap/practica-nmap';
-
-/**NetCat */
-import { ComandosNetCatPage } from '../pages/Contenidos/Capitulos/Capitulo 3/Talleres Capitulo 3/NetCat/comandos-net-cat/comandos-net-cat';
-import { PracticaNetCatPage } from '../pages/Contenidos/Capitulos/Capitulo 3/Talleres Capitulo 3/NetCat/practica-net-cat/practica-net-cat';
-
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -182,14 +162,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     PaginaInicioPage,
 
     HomePage,
-    ListPage,
 
     /**Sesion y registro de usuario */
     LoginPage,
     RegistrarPage,
 
     /**Contenidos */
-    TemasPage,
     PlanCapacitiacionPage,
     ForoPage,
     EstadisticasPage,
@@ -321,24 +299,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     /**Unidad 7 Sub Unidad 2 */
     T1Su2Un7Page,
     T2Su2U7Page,
-
-    /**Actividades y evaluaciones */
-
-    /**Evaluaciones */
-    Eva1Cap1Page,
-    Eva1Cap2Page,
-    Eva1Cap3Page,
-    Eva1Cap4Page,
-
-
-    /**Actividad y comandos Tema 3-2 */
-    /**Nmap */
-    ComandosNmapPage,
-    PracticaNmapPage,
-
-    /**NetCat */
-    ComandosNetCatPage,
-    PracticaNetCatPage,
 
   ],
   imports: [
@@ -353,14 +313,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     PaginaInicioPage,
 
     HomePage,
-    ListPage,
 
     /**Sesion y registro de usuario */
     LoginPage,
     RegistrarPage,
 
     /**Contenidos */
-    TemasPage,
     PlanCapacitiacionPage,
     ForoPage,
     EstadisticasPage,
@@ -489,25 +447,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     /**Unidad 7 Sub Unidad 2 */
     T1Su2Un7Page,
     T2Su2U7Page,
-
-    /**Actividades y evaluaciones */
-
-    /**Evaluaciones */
-    Eva1Cap1Page,
-    Eva1Cap2Page,
-    Eva1Cap3Page,
-    Eva1Cap4Page,
-
-
-    /**Actividad y comandos Tema 3-2 */
-    /**Nmap */
-    ComandosNmapPage,
-    PracticaNmapPage,
-
-    /**NetCat */
-    ComandosNetCatPage,
-    PracticaNetCatPage,
-
 
   ],
   providers: [
