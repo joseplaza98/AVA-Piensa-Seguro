@@ -4,6 +4,9 @@ import { T1Su1Un7Page } from '../Sub Unidad 1/t1-su1-un7/t1-su1-un7';
 import { T1Su2Un7Page } from '../Sub Unidad 2/t1-su2-un7/t1-su2-un7';
 import { T2Su2U7Page } from '../Sub Unidad 2/t2-su2-u7/t2-su2-u7';
 import { InsigniasPage } from '../../../../Logros/insignias/insignias';
+import { A2Su1U7Page } from '../../../../Cápsulas (Actividades)/Capsu-U7/Capsu-U7-SU1/a2-su1-u7/a2-su1-u7';
+import { A1Su1U7Page } from '../../../../Cápsulas (Actividades)/Capsu-U7/Capsu-U7-SU1/a1-su1-u7/a1-su1-u7';
+import { PruebaU7Page } from '../../../../Pruebas (Evaluaciones)/prueba-u7/prueba-u7';
 
 /**
  * Generated class for the SelecSuU7Page page.
@@ -40,7 +43,20 @@ export class SelecSuU7Page {
     this.navCtrl.push(T2Su2U7Page);
   }
 
-  aInsignias(){
+  /**Cápsula (Actividad) U6-SU1 */
+  a1_su1_u7() {
+    this.navCtrl.push(A1Su1U7Page);
+  }
+
+  a2_su1_u7() {
+    this.navCtrl.push(A2Su1U7Page);
+  }
+
+  aEVA_U7() {
+    this.navCtrl.push(PruebaU7Page);
+  }
+
+  aInsignias() {
     this.navCtrl.setRoot(InsigniasPage)
   }
 }

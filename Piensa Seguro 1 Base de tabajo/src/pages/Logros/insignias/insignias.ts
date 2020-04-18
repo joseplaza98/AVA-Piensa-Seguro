@@ -7,6 +7,7 @@ import { LogrosU4Page } from '../logros-u4/logros-u4';
 import { LogrosU5Page } from '../logros-u5/logros-u5';
 import { LogrosU6Page } from '../logros-u6/logros-u6';
 import { LogrosU7Page } from '../logros-u7/logros-u7';
+import { CertificadoPage } from '../certificado/certificado';
 
 /**
  * Generated class for the InsigniasPage page.
@@ -57,5 +58,8 @@ export class InsigniasPage {
     this.navCtrl.push(LogrosU7Page);
   }
 
-
+  aCertificado(){
+    this.navCtrl.push(CertificadoPage);
+  }
+  
 }

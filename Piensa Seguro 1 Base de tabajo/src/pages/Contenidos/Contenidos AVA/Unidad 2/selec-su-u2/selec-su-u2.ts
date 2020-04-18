@@ -15,6 +15,16 @@ import { T5Su4U2Page } from '../Sub Unidad 4/t5-su4-u2/t5-su4-u2';
 import { T6Su4U2Page } from '../Sub Unidad 4/t6-su4-u2/t6-su4-u2';
 import { T7Su4U2Page } from '../Sub Unidad 4/t7-su4-u2/t7-su4-u2';
 import { IntU3Page } from '../../Unidad 3/int-u3/int-u3';
+import { A1Su1U2Page } from '../../../../Cápsulas (Actividades)/Capsu-U2/Capsu-U2-SU1/a1-su1-u2/a1-su1-u2';
+import { A2Su1U2Page } from '../../../../Cápsulas (Actividades)/Capsu-U2/Capsu-U2-SU1/a2-su1-u2/a2-su1-u2';
+import { A3Su1U2Page } from '../../../../Cápsulas (Actividades)/Capsu-U2/Capsu-U2-SU1/a3-su1-u2/a3-su1-u2';
+import { A4Su1U2Page } from '../../../../Cápsulas (Actividades)/Capsu-U2/Capsu-U2-SU1/a4-su1-u2/a4-su1-u2';
+import { A1Su2U2Page } from '../../../../Cápsulas (Actividades)/Capsu-U2/Capsu-U2-SU2/a1-su2-u2/a1-su2-u2';
+import { A1Su3U2Page } from '../../../../Cápsulas (Actividades)/Capsu-U2/Capsu-U2-SU3/a1-su3-u2/a1-su3-u2';
+import { A2Su3U2Page } from '../../../../Cápsulas (Actividades)/Capsu-U2/Capsu-U2-SU3/a2-su3-u2/a2-su3-u2';
+import { A1Su4U2Page } from '../../../../Cápsulas (Actividades)/Capsu-U2/Capsu-U2-SU4/a1-su4-u2/a1-su4-u2';
+import { A2Su4U2Page } from '../../../../Cápsulas (Actividades)/Capsu-U2/Capsu-U2-SU4/a2-su4-u2/a2-su4-u2';
+import { PruebaU2Page } from '../../../../Pruebas (Evaluaciones)/prueba-u2/prueba-u2';
 
 
 /**
@@ -55,9 +65,31 @@ export class SelecSuU2Page {
     this.navCtrl.push(T4Su1U2Page);
   }
 
+  /**Cápsula (Actividad) U2-SU1 */
+  a1_su1_U2() {
+    this.navCtrl.push(A1Su1U2Page);
+  }
+
+  a2_su1_U2() {
+    this.navCtrl.push(A2Su1U2Page);
+  }
+
+  a3_su1_U2() {
+    this.navCtrl.push(A3Su1U2Page);
+  }
+
+  a4_su1_U2() {
+    this.navCtrl.push(A4Su1U2Page);
+  }
+
   /** Unidad 2 Sub Unidad 2*/
   t1_su2_u1() {
     this.navCtrl.push(T1Su2U2Page);
+  }
+
+  /**Cápsula (Actividad) U2-SU2 */
+  a1_su2_u2() {
+    this.navCtrl.push(A1Su2U2Page);
   }
 
   /** Unidad 2 Sub Unidad 3*/
@@ -67,6 +99,15 @@ export class SelecSuU2Page {
 
   t2_su3_u2() {
     this.navCtrl.push(T2Su3U2Page);
+  }
+
+  /**Cápsula (Actividad) U2-SU3 */
+  a1_su3_u2() {
+    this.navCtrl.push(A1Su3U2Page);
+  }
+
+  a2_su3_u2() {
+    this.navCtrl.push(A2Su3U2Page);
   }
 
   /** Unidad 2 Sub Unidad 4*/
@@ -98,7 +139,20 @@ export class SelecSuU2Page {
     this.navCtrl.push(T7Su4U2Page);
   }
 
-  aintU3(){
+  /**Cápsula (Actividad) U2-SU4 */
+  a1_su4_u2() {
+    this.navCtrl.push(A1Su4U2Page);
+  }
+
+  a2_su4_u2() {
+    this.navCtrl.push(A2Su4U2Page);
+  }
+
+  aEVA_U2(){
+    this.navCtrl.push(PruebaU2Page);
+  }
+
+  aintU3() {
     this.navCtrl.setRoot(IntU3Page)
   }
 
