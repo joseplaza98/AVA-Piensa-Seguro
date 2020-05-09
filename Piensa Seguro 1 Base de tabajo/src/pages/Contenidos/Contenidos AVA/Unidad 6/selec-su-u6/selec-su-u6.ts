@@ -13,6 +13,8 @@ import { A1Su1U6Page } from '../../../../Cápsulas (Actividades)/Capsu-U6/Capsu-
 import { A3Su1U6Page } from '../../../../Cápsulas (Actividades)/Capsu-U6/Capsu-U6-SU1/a3-su1-u6/a3-su1-u6';
 import { A2Su1U6Page } from '../../../../Cápsulas (Actividades)/Capsu-U6/Capsu-U6-SU1/a2-su1-u6/a2-su1-u6';
 import { PruebaU6Page } from '../../../../Pruebas (Evaluaciones)/prueba-u6/prueba-u6';
+import { Criptolaboratorio1Page } from '../Sub Unidad 1/criptolaboratorio1/criptolaboratorio1';
+import { Criptolaboratorio2Page } from '../Sub Unidad 1/criptolaboratorio2/criptolaboratorio2';
 
 /**
  * Generated class for the SelecSuU6Page page.
@@ -87,6 +89,14 @@ export class SelecSuU6Page {
 
   aintU7() {
     this.navCtrl.setRoot(IntU7Page)
+  }
+
+  criptolaboratiorio1(){
+    this.navCtrl.push(Criptolaboratorio1Page);
+  }
+
+  criptolaboratiorio2(){
+    this.navCtrl.push(Criptolaboratorio2Page);
   }
 
 }

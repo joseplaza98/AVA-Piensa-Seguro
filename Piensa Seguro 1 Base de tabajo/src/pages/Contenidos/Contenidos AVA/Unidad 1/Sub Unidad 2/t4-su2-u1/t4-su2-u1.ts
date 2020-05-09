@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the T1_1Su1U1Page page.
+ * Generated class for the T4Su2U1Page page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,16 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-t1-1-su1-u1',
-  templateUrl: 't1-1-su1-u1.html',
+  selector: 'page-t4-su2-u1',
+  templateUrl: 't4-su2-u1.html',
 })
-export class T1_1Su1U1Page {
+export class T4Su2U1Page {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad T1_1Su1U1Page');
+    console.log('ionViewDidLoad T4Su2U1Page');
   }
 
 }

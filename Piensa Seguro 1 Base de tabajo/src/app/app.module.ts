@@ -38,12 +38,16 @@ import { SelecSuU1Page } from '../pages/Contenidos/Contenidos AVA/Unidad 1/selec
 
 /**Unidad 1 Sub Unidad 1 */
 import { T1Su1U1Page } from '../pages/Contenidos/Contenidos AVA/Unidad 1/Sub Unidad 1/t1-su1-u1/t1-su1-u1';
-import { T1_1Su1U1Page } from '../pages/Contenidos/Contenidos AVA/Unidad 1/Sub Unidad 1/t1-1-su1-u1/t1-1-su1-u1';
 import { T2Su1U1Page } from '../pages/Contenidos/Contenidos AVA/Unidad 1/Sub Unidad 1/t2-su1-u1/t2-su1-u1';
+import { T3Su1U1Page } from '../pages/Contenidos/Contenidos AVA/Unidad 1/Sub Unidad 1/t3-su1-u1/t3-su1-u1';
+import { T4Su1U1Page } from '../pages/Contenidos/Contenidos AVA/Unidad 1/Sub Unidad 1/t4-su1-u1/t4-su1-u1';
+import { T5Su1U1Page } from '../pages/Contenidos/Contenidos AVA/Unidad 1/Sub Unidad 1/t5-su1-u1/t5-su1-u1';
 
 /**Unidad 1 Sub Unidad 2 */
 import { T1Su2U1Page } from '../pages/Contenidos/Contenidos AVA/Unidad 1/Sub Unidad 2/t1-su2-u1/t1-su2-u1';
 import { T2Su2U1Page } from '../pages/Contenidos/Contenidos AVA/Unidad 1/Sub Unidad 2/t2-su2-u1/t2-su2-u1';
+import { T3Su2U1Page } from '../pages/Contenidos/Contenidos AVA/Unidad 1/Sub Unidad 2/t3-su2-u1/t3-su2-u1';
+import { T4Su2U1Page } from '../pages/Contenidos/Contenidos AVA/Unidad 1/Sub Unidad 2/t4-su2-u1/t4-su2-u1';
 
 /**Cápsulas (Actividades) U1*/
 /**Cápsulas (Actividades) U1-SU1*/
@@ -208,6 +212,8 @@ import { T5Su1Un6Page } from '../pages/Contenidos/Contenidos AVA/Unidad 6/Sub Un
 import { T6Su1Un6Page } from '../pages/Contenidos/Contenidos AVA/Unidad 6/Sub Unidad 1/t6-su1-un6/t6-su1-un6';
 import { T7Su1Un6Page } from '../pages/Contenidos/Contenidos AVA/Unidad 6/Sub Unidad 1/t7-su1-un6/t7-su1-un6';
 import { T8Su1Un6Page } from '../pages/Contenidos/Contenidos AVA/Unidad 6/Sub Unidad 1/t8-su1-un6/t8-su1-un6';
+import { Criptolaboratorio1Page } from '../pages/Contenidos/Contenidos AVA/Unidad 6/Sub Unidad 1/criptolaboratorio1/criptolaboratorio1';
+import { Criptolaboratorio2Page } from '../pages/Contenidos/Contenidos AVA/Unidad 6/Sub Unidad 1/criptolaboratorio2/criptolaboratorio2';
 
 /**Cápsulas (Actividades) U6*/
 /**Cápsulas (Actividades) U6-SU1*/
@@ -278,13 +284,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
     /**Unidad 1 Sub Unidad 1 */
     T1Su1U1Page,
-    T1_1Su1U1Page,
-
     T2Su1U1Page,
+    T3Su1U1Page,
+    T4Su1U1Page,
+    T5Su1U1Page,
 
     /**Unidad 1 Sub Unidad 2 */
     T1Su2U1Page,
     T2Su2U1Page,
+    T3Su2U1Page,
+    T4Su2U1Page,
 
     /**Cápsulas (Actividades) U1 */
     /**Cápsulas (Actividades) U1-SU1*/
@@ -444,6 +453,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     T6Su1Un6Page,
     T7Su1Un6Page,
     T8Su1Un6Page,
+    Criptolaboratorio1Page,
+    Criptolaboratorio2Page,
 
     /**Cápsulas (Actividades) U6*/
     /**Cápsulas (Actividades) U6-SU1*/
@@ -514,14 +525,17 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SelecSuU1Page,
 
     /**Unidad 1 Sub Unidad 1 */
-      T1Su1U1Page,
-    T1_1Su1U1Page,
-    
+    T1Su1U1Page,
     T2Su1U1Page,
+    T3Su1U1Page,
+    T4Su1U1Page,
+    T5Su1U1Page,
 
     /**Unidad 1 Sub Unidad 2 */
     T1Su2U1Page,
     T2Su2U1Page,
+    T3Su2U1Page,
+    T4Su2U1Page,
 
     /**Cápsulas (Actividades) U1 */
     /**Cápsulas (Actividades) U1-SU1*/
@@ -681,6 +695,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     T6Su1Un6Page,
     T7Su1Un6Page,
     T8Su1Un6Page,
+    Criptolaboratorio1Page,
+    Criptolaboratorio2Page,
 
     /**Cápsulas (Actividades) U6*/
     /**Cápsulas (Actividades) U6-SU1*/
