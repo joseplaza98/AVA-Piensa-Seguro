@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { T1Su1Un7Page } from '../Sub Unidad 1/t1-su1-un7/t1-su1-un7';
-import { T1Su2Un7Page } from '../Sub Unidad 2/t1-su2-un7/t1-su2-un7';
-import { T2Su2U7Page } from '../Sub Unidad 2/t2-su2-u7/t2-su2-u7';
+import { T2Su1U7Page } from '../Sub Unidad 1/t2-su1-u7/t2-su1-u7';
 import { InsigniasPage } from '../../../../Logros/insignias/insignias';
 import { A2Su1U7Page } from '../../../../Cápsulas (Actividades)/Capsu-U7/Capsu-U7-SU1/a2-su1-u7/a2-su1-u7';
 import { A1Su1U7Page } from '../../../../Cápsulas (Actividades)/Capsu-U7/Capsu-U7-SU1/a1-su1-u7/a1-su1-u7';
@@ -34,13 +33,8 @@ export class SelecSuU7Page {
     this.navCtrl.push(T1Su1Un7Page);
   }
 
-  /**Unidad 7 Sub Unidad 2 */
-  t1_su2_u7() {
-    this.navCtrl.push(T1Su2Un7Page);
-  }
-
-  t2_su2_u7() {
-    this.navCtrl.push(T2Su2U7Page);
+  t2_su1_u7() {
+    this.navCtrl.push(T2Su1U7Page);
   }
 
   /**Cápsula (Actividad) U6-SU1 */
@@ -53,7 +47,7 @@ export class SelecSuU7Page {
   }
 
   aEVA_U7() {
-    this.navCtrl.push(PruebaU7Page);
+    this.navCtrl.setRoot(PruebaU7Page);
   }
 
   aInsignias() {

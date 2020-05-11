@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { BiblioPage } from '../biblio/biblio';
 
 /**
  * Generated class for the AcercaDePage page.
@@ -16,6 +17,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class AcercaDePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  aBiblio(){
+    this.navCtrl.push(BiblioPage)
   }
 
   ionViewDidLoad() {

@@ -16,41 +16,30 @@
 <ion-content padding class="fn">
 
 
-  <ion-card class="card-content2">
+  <ion-card class="card-sizev">
+    <ion-card-content class="v-container">
+      <div class="v-container1 iframe">
+        <iframe src="https://www.youtube.com/embed/BZmdtUGaLPs" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </ion-card-content>
+  </ion-card>
 
-    <ion-grid>
-      <ion-row>
+  <ion-card class="card-sizet">
 
-        <ion-col>
-          <ion-card-content class="v-container">
-            <div class="v-container iframe">
-              <iframe src="https://www.youtube.com/embed/OROOH7AXpMc" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-          </ion-card-content>
-        </ion-col>
-      </ion-row>
+    <ion-card-header class="card-title" text-wrap>Introducción</ion-card-header>
+    <ion-card-content class="card-subtitle">
 
-      <ion-row>
-        <ion-col>
-          <ion-card-content class="card-subtitle">
-            <ion-card-title>Introducción</ion-card-title>
+      La determinación de los medios y metodologías de ataque, juegan un papel importante dentro de la
+      ciberseguridad, por la razón de efectividad en la selección del medio para acceder a los sistemas
+      informáticos y la metodología que en algunos casos ya es preestablecida, derivando de este modo, la
+      obtención de resultados mucho más efectivos sobre los objetivos impactados.
 
-            La determinación de los medios y metodologías de ataque, juegan un papel importante dentro de la
-            ciberseguridad, por la razón de efectividad en la selección del medio para acceder a los sistemas
-            informáticos y la metodología que en algunos casos ya es preestablecida, derivando de este modo, la
-            obtención de resultados mucho más efectivos sobre los objetivos impactados.
+    </ion-card-content>
 
-          </ion-card-content>
-
-          <ion-card-content class="button-content">
-            <button ion-button class="btn" round (click)="aSelec_SU_U3()">Iniciar</button>
-          </ion-card-content>
-        </ion-col>
-
-      </ion-row>
-    </ion-grid>
+    <ion-card-content class="button-content">
+      <button ion-button class="btn" round (click)="aSelec_SU_U3()">Iniciar</button>
+    </ion-card-content>
 
   </ion-card>
 
