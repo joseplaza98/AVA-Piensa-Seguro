@@ -12,6 +12,7 @@ import { T2Su1U5Page } from '../Sub Unidad 1/t2-su1-u5/t2-su1-u5';
 import { T3Su1U5Page } from '../Sub Unidad 1/t3-su1-u5/t3-su1-u5';
 import { T1Su2U5Page } from '../Sub Unidad 2/t1-su2-u5/t1-su2-u5';
 import { T2Su2U5Page } from '../Sub Unidad 2/t2-su2-u5/t2-su2-u5';
+import { LogrosU5Page } from '../../../../Logros/logros-u5/logros-u5';
 
 /**
  * Generated class for the SelecSuU5Page page.
@@ -30,8 +31,8 @@ export class SelecSuU5Page {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad SelecSuU5Page');
+  aLogrosU5() {
+    this.navCtrl.push(LogrosU5Page)
   }
 
   /**Unidad 5 Sub Unidad 1 */
@@ -71,11 +72,15 @@ export class SelecSuU5Page {
   }
 
   aEVA_U5() {
-    this.navCtrl.setRoot(PruebaU5Page);
+    this.navCtrl.push(PruebaU5Page);
   }
 
   aintU6() {
     this.navCtrl.setRoot(IntU6Page)
   }
 
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad SelecSuU5Page');
+  }
+  
 }

@@ -6,6 +6,12 @@
 -->
 <ion-header>
   <ion-navbar color="nvColor">
+    <ion-buttons end>
+      <button (click)="aLogrosU7()" ion-button round icon-only>
+        Logros
+        <ion-icon name="md-ribbon"></ion-icon>
+      </button>
+    </ion-buttons>
     <ion-title>selec-su-u7</ion-title>
   </ion-navbar>
 </ion-header>
@@ -73,7 +79,7 @@
               </ion-item>
 
               <hr class="rounded">
-              
+
               <ion-item class="font-list">
                 <ion-thumbnail item-start>
                   <img src="../../../../../assets/icon/Iconos/alerta.png">
@@ -111,28 +117,6 @@
           </ion-card-content>
         </ion-card>
 
-        <ion-card class="card-content2">
-          <ion-card-content class="card-title">
-
-            <strong>Sala de insignias</strong>
-
-            <ion-list>
-
-              <ion-item class="font-list">
-                <ion-thumbnail item-start>
-                  <img src="../../../../../assets/icon/Logros/Insignia.png">
-                </ion-thumbnail>
-                <button ion-button round clear item-end icon-end (click)="aInsignias()">
-                  Insignias
-                  <ion-icon name="md-fastforward"></ion-icon>
-                </button>
-              </ion-item>
-
-            </ion-list>
-
-          </ion-card-content>
-
-        </ion-card>
       </ion-col>
 
     </ion-row>

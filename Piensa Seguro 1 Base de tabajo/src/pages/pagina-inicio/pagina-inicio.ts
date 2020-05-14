@@ -3,13 +3,15 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { LoginPage } from '../Sesión/login/login';
 import { RegistrarPage } from '../Sesión/registrar/registrar';
 
+import { DisableSideMenu } from '../../CustomDecorators/disable-side-menu.decorator';
+
 /**
  * Generated class for the PaginaInicioPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
-
+@DisableSideMenu()
 @IonicPage()
 @Component({
   selector: 'page-pagina-inicio',

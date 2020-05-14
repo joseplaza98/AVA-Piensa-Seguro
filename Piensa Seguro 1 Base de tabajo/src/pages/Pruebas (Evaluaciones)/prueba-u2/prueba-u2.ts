@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController, LoadingController } from 'ionic-angular';
+import { DisableSideMenu } from '../../../CustomDecorators/disable-side-menu.decorator';
 
 /**
  * Generated class for the PruebaU2Page page.
@@ -8,6 +9,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
+@DisableSideMenu()
 @IonicPage()
 @Component({
   selector: 'page-prueba-u2',
@@ -15,11 +17,52 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class PruebaU2Page {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  /**Vista y ocultamiento */
+  verPrueba: boolean = false;
+  ocultarPrueba: boolean = true;
+
+  ocultarBtn: boolean = true;
+  verBtn: boolean = false;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, private alertCtrl: AlertController, public loadingCtrl: LoadingController) {
+  }
+
+  accion1() {
+    this.verPrueba = !this.verPrueba;
+    this.ocultarBtn = !this.ocultarBtn;
+    this.checkActiveButton();
+
+    let loading = this.loadingCtrl.create({
+      content: 'Cargando...'
+    });
+
+    loading.present();
+
+    setTimeout(() => {
+      loading.dismiss();
+    }, 5000);
+  }
+
+  checkActiveButton() {
+
+    if (this.verPrueba = true) {
+      this.ocultarPrueba = false;
+      if (this.ocultarBtn = false) {
+        this.verBtn = true;
+      }
+    }
+
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PruebaU2Page');
+
+    let alert = this.alertCtrl.create({
+      title: 'NOTA',
+      subTitle: 'Recuerde que solo tiene una oportunidad de realizar la prueba.',
+      buttons: ['Entendido']
+    });
+    alert.present();
   }
 
 }

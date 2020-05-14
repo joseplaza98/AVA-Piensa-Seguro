@@ -6,16 +6,19 @@
 -->
 <ion-header>
   <ion-navbar color="nvColor">
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
     <ion-title>prueba-u4</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding class="fn">
 
-  <div id="Iframe-Liason-Sheet" class="iframe-border center-block-horiz">
+  <div *ngIf="ocultarBtn" class="button-content">
+    <button ion-button class="btn" round (click)="accion1()">Iniciar</button>
+  </div>
+
+  <br />
+
+  <div id="Iframe-Liason-Sheet2" class="iframe-border center-block-horiz" *ngIf="verPrueba">
     <div class="responsive-wrapper responsive-wrapper-wxh-760x1200">
       <iframe src="https://es.surveymonkey.com/r/PCDSWYJ">Cargando…</iframe>
     </div>

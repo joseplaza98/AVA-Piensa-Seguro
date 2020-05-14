@@ -36,6 +36,7 @@ import { A2Su3U2Page } from '../../../../Cápsulas (Actividades)/Capsu-U2/Capsu-
 import { A1Su4U2Page } from '../../../../Cápsulas (Actividades)/Capsu-U2/Capsu-U2-SU4/a1-su4-u2/a1-su4-u2';
 import { A2Su4U2Page } from '../../../../Cápsulas (Actividades)/Capsu-U2/Capsu-U2-SU4/a2-su4-u2/a2-su4-u2';
 import { PruebaU2Page } from '../../../../Pruebas (Evaluaciones)/prueba-u2/prueba-u2';
+import { LogrosU2Page } from '../../../../Logros/logros-u2/logros-u2';
 
 
 
@@ -58,8 +59,8 @@ export class SelecSuU2Page {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad SelecSuU2Page');
+  aLogrosU2() {
+    this.navCtrl.push(LogrosU2Page)
   }
 
   /** Unidad 2 Sub Unidad 1*/
@@ -171,11 +172,15 @@ export class SelecSuU2Page {
   }
 
   aEVA_U2() {
-    this.navCtrl.setRoot(PruebaU2Page);
+    this.navCtrl.push(PruebaU2Page);
   }
 
   aintU3() {
     this.navCtrl.setRoot(IntU3Page)
+  }
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad SelecSuU2Page');
   }
 
 }

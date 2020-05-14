@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { T1Su1Un7Page } from '../Sub Unidad 1/t1-su1-un7/t1-su1-un7';
 import { T2Su1U7Page } from '../Sub Unidad 1/t2-su1-u7/t2-su1-u7';
-import { InsigniasPage } from '../../../../Logros/insignias/insignias';
 import { A2Su1U7Page } from '../../../../Cápsulas (Actividades)/Capsu-U7/Capsu-U7-SU1/a2-su1-u7/a2-su1-u7';
 import { A1Su1U7Page } from '../../../../Cápsulas (Actividades)/Capsu-U7/Capsu-U7-SU1/a1-su1-u7/a1-su1-u7';
 import { PruebaU7Page } from '../../../../Pruebas (Evaluaciones)/prueba-u7/prueba-u7';
+import { LogrosU7Page } from '../../../../Logros/logros-u7/logros-u7';
 
 /**
  * Generated class for the SelecSuU7Page page.
@@ -24,8 +24,8 @@ export class SelecSuU7Page {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad SelecSuU7Page');
+  aLogrosU7() {
+    this.navCtrl.push(LogrosU7Page)
   }
 
   /**Unidad 7 Sub Unidad 1 */
@@ -47,10 +47,11 @@ export class SelecSuU7Page {
   }
 
   aEVA_U7() {
-    this.navCtrl.setRoot(PruebaU7Page);
+    this.navCtrl.push(PruebaU7Page);
   }
 
-  aInsignias() {
-    this.navCtrl.setRoot(InsigniasPage)
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad SelecSuU7Page');
   }
+
 }

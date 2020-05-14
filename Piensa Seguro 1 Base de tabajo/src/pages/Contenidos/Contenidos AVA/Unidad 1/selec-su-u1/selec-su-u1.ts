@@ -16,6 +16,7 @@ import { A1Su2U1Page } from '../../../../Cápsulas (Actividades)/Capsu-U1/Capsu-
 import { PruebaU1Page } from '../../../../Pruebas (Evaluaciones)/prueba-u1/prueba-u1';
 
 import { IntU2Page } from '../../Unidad 2/int-u2/int-u2';
+import { LogrosU1Page } from '../../../../Logros/logros-u1/logros-u1';
 
 /**
  * Generated class for the SelecSuU1Page page.
@@ -34,9 +35,10 @@ export class SelecSuU1Page {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad SelecSuU1Page');
+  aLogrosU1(){
+    this.navCtrl.push(LogrosU1Page)
   }
+
 
   /**Temas Sub Unidad 1 */
 
@@ -90,11 +92,15 @@ export class SelecSuU1Page {
   }
 
   aEVA_U1() {
-    this.navCtrl.setRoot(PruebaU1Page);
+    this.navCtrl.push(PruebaU1Page);
   }
 
   aintU2() {
     this.navCtrl.setRoot(IntU2Page)
+  }
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad SelecSuU1Page');
   }
 
 }

@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { LoginPage } from '../login/login';
 
+import { DisableSideMenu } from '../../../CustomDecorators/disable-side-menu.decorator';
+
 /**
  * Generated class for the RegistrarPage page.
  *
@@ -9,6 +11,7 @@ import { LoginPage } from '../login/login';
  * Ionic pages and navigation.
  */
 
+@DisableSideMenu()
 @IonicPage()
 @Component({
   selector: 'page-registrar',

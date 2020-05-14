@@ -12,6 +12,7 @@ import { A2Su1U6Page } from '../../../../Cápsulas (Actividades)/Capsu-U6/Capsu-
 import { PruebaU6Page } from '../../../../Pruebas (Evaluaciones)/prueba-u6/prueba-u6';
 import { Criptolaboratorio1Page } from '../Sub Unidad 1/criptolaboratorio1/criptolaboratorio1';
 import { Criptolaboratorio2Page } from '../Sub Unidad 1/criptolaboratorio2/criptolaboratorio2';
+import { LogrosU6Page } from '../../../../Logros/logros-u6/logros-u6';
 
 /**
  * Generated class for the SelecSuU6Page page.
@@ -30,8 +31,8 @@ export class SelecSuU6Page {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad SelecSuU6Page');
+  aLogrosU6() {
+    this.navCtrl.push(LogrosU6Page)
   }
 
   /**Unidad 6 Sub Unidad 1 */
@@ -69,7 +70,7 @@ export class SelecSuU6Page {
   }
 
   aEVA_U6() {
-    this.navCtrl.setRoot(PruebaU6Page);
+    this.navCtrl.push(PruebaU6Page);
   }
 
   aintU7() {
@@ -82,6 +83,10 @@ export class SelecSuU6Page {
 
   criptolaboratiorio2() {
     this.navCtrl.push(Criptolaboratorio2Page);
+  }
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad SelecSuU6Page');
   }
 
 }

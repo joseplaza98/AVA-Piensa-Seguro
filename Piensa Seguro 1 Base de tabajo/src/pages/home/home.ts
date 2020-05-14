@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, ToastController } from 'ionic-angular';
 import { IntU1Page } from '../Contenidos/Contenidos AVA/Unidad 1/int-u1/int-u1';
 import { IntU2Page } from '../Contenidos/Contenidos AVA/Unidad 2/int-u2/int-u2';
 import { IntU3Page } from '../Contenidos/Contenidos AVA/Unidad 3/int-u3/int-u3';
@@ -14,7 +14,7 @@ import { IntU7Page } from '../Contenidos/Contenidos AVA/Unidad 7/int-u7/int-u7';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, public toastCtrl: ToastController) {
 
   }
 
@@ -44,6 +44,19 @@ export class HomePage {
 
   aInt_U7() {
     this.navCtrl.push(IntU7Page);
+  }
+
+  ionViewDidLoad( position: string ) {
+    console.log('ionViewDidLoad HomePage');
+
+      let toast = this.toastCtrl.create({
+        message: 'Infinity le da la bienvenida.',
+        duration: 2000,
+        position: position
+      });
+  
+      toast.present(toast);
+    
   }
 
 }

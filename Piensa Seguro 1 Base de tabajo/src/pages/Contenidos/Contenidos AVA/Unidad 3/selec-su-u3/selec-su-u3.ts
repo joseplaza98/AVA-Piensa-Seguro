@@ -33,6 +33,7 @@ import { A3Su2U3Page } from '../../../../Cápsulas (Actividades)/Capsu-U3/Capsu-
 import { A1Su3U3Page } from '../../../../Cápsulas (Actividades)/Capsu-U3/Capsu-U3-SU3/a1-su3-u3/a1-su3-u3';
 
 import { PruebaU3Page } from '../../../../Pruebas (Evaluaciones)/prueba-u3/prueba-u3';
+import { LogrosU3Page } from '../../../../Logros/logros-u3/logros-u3';
 
 /**
  * Generated class for the SelecSuU3Page page.
@@ -49,6 +50,10 @@ import { PruebaU3Page } from '../../../../Pruebas (Evaluaciones)/prueba-u3/prueb
 export class SelecSuU3Page {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  aLogrosU3() {
+    this.navCtrl.push(LogrosU3Page)
   }
 
   ionViewDidLoad() {
@@ -126,7 +131,7 @@ export class SelecSuU3Page {
   }
 
   aEVA_U3(){
-    this.navCtrl.setRoot(PruebaU3Page);
+    this.navCtrl.push(PruebaU3Page);
   }
 
   aintU4() {
